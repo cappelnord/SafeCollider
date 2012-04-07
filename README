@@ -1,0 +1,15 @@
+Safeguards for SuperCollider live coding.
+
+SystemOverwrites are really bad style, so only use this when you
+know what you do. These extension tries to catch some possible
+crashes while mistyping things.
+
+The extension is currently compatible with SC 3.5.1
+
+Send me a pull request if you want to add some things! I will only
+add stuff that really has no purpose.
+
+For example:
+
+[...]!inf really has no purpose at the moment.
+inf.do can lead to a crash, but not in a yielded Stream
