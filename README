@@ -4,8 +4,8 @@ SystemOverwrites are really bad style, so only use this when you
 know what you do. This extension tries to catch some possible
 crashes while mistyping things, and other stupid stuff.
 
-The extension is currently compatible with SC 3.5.1.
-Don't use it with other versions!
+The extension is currently compatible with SC 3.5.3.
+It can make things go bad on other versions.
 
 Send me a pull request if you want to add things! I will only
 add stuff that really has no purpose and leads to a crash/hang.
