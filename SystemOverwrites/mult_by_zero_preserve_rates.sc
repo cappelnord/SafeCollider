@@ -1,7 +1,7 @@
 // removes multiply optimization which
 // can lead to faulty rates
 
-+ BinaryOpUGen {
++ BinaryOpUGen { // 3.6.2
 	*new1 { arg rate, selector, a, b;
 
 		// eliminate degenerate cases
@@ -31,7 +31,7 @@
 	}
 }
 
-+ MulAdd {
++ MulAdd { // 3.6.2
 	*new1 { arg rate, in, mul, add;
 		var minus, nomul, noadd;
 

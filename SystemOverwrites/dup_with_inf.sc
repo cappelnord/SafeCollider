@@ -1,15 +1,13 @@
 + Function {
-	dup { arg n = 2; // 3.5.1
+	dup { arg n = 2; // 3.6.2
 		var array;
 		SafeCollider.assert(n != inf, "Can't duplicate a value for infinite times!");
-		array = Array(n);
-		n.do {|i| array.add(this.value(i)) };
-		^array
+		^Array.fill(n, this)
 	}
 }
 
 + Object {
-	dup { arg n = 2; // 3.5.1
+	dup { arg n = 2; // 3.6.2
 		SafeCollider.assert(n != inf, "Can't duplicate a value for infinite times!");
 		^Array.fill(n, { this.copy });
 	}	
